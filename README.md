@@ -49,9 +49,9 @@ docker pull registry.opentext.com/dctm-content-connect-dbinit:23.2
 docker logout
 ```
 
-Or just run the `docker_pull.cmd` file, in the DCTM on Kubernetes folder.
+Or just run the `docker_pull.cmd` file, in the Documentum-On-Kubernetes-for-Windows-VM folder.
 
-###  `cd` to DCTM on Kubernetes folder, and run
+###  `cd` to Documentum-On-Kubernetes-for-Windows-VM folder, and run
   ```
   kubectl apply -f ingress_deploy.yaml
   ```
@@ -62,7 +62,7 @@ Or just run the `docker_pull.cmd` file, in the DCTM on Kubernetes folder.
   kubectl create namespace d2
   ```
 
-###  `cd` to the d2 folder that's in the DCTM on Kubernetes folder, and run
+###  `cd` to the d2 folder that's in the Documentum-On-Kubernetes-for-Windows-VM folder, and run
   ```
   helm install d2 . --values=dockerimages-values.yaml --values=d2-resources-values-test-small.yaml --namespace d2
   ```
