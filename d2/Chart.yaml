@@ -1,0 +1,21 @@
+apiVersion: v2
+appVersion: 23.2.0000.0158
+dependencies:
+- name: dctm-server
+  repository: https://artifactory.otxlab.net/artifactory/BPhelm
+  version: "23.2"
+- condition: d2rest.enabled
+  name: d2rest
+  repository: https://artifactory.otxlab.net/artifactory/BPhelm
+  version: "23.2"
+- condition: d2ingress.enabled
+  name: d2ingress
+  repository: https://artifactory.otxlab.net/artifactory/BPhelm
+  version: "23.2"
+- condition: otiv.enabled
+  name: otiv
+  repository: https://artifactory.otxlab.net/artifactory/BPhelm
+  version: 23.2.0
+description: A Helm chart for Kubernetes
+name: d2
+version: "23.2"
